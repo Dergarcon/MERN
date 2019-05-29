@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://nick:Noexcuses-om90@mern-2zpaj.mongodb.net/test?retryWrites=true"
+    "mongoURI": "mongodb+srv://nick:Noexcuses-om90@mern-2zpaj.mongodb.net/test?retryWrites=true",
+    "jwtSecret": "mysecrettoken12309uqoadh"
 }
