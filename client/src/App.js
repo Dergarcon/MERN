@@ -18,9 +18,9 @@ import { loadUser } from './actions/auth'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 //import { faGoogle } from '@fortawesome/free-brands-svg-icons'
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faSignOutAlt)
+library.add(faSignOutAlt, faUser)
 
 if (localStorage.token) {
   setAuthToken(localStorage.token)

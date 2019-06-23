@@ -10,7 +10,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const authLinks = (
         <ul>
             <li><a onClick={logout} href="#!"><FontAwesomeIcon icon="sign-out-alt" />{' '}<span className='hide-sm'>Logout</span></a></li>
-            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/dashboard"><FontAwesomeIcon icon="user" />{' '}<span className='hide-sm'>Dashboard</span></Link></li>
         </ul>
     )
 
@@ -24,7 +24,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
     return (
         <nav>
-            <h1><Link to="/dashboard">DevConnector</Link></h1>
+            <h1><Link to="/">DevConnector</Link></h1>
             {!loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}
         </nav>
     )
