@@ -1,7 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import { login } from '../../actions/auth'
-import { setAlert } from '../../actions/alert'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types'
 
@@ -31,7 +30,7 @@ const Login = ({ login, setAlert, isAuthenticated }) => {
     return (
         <Fragment>
             <h1>Sign Up</h1>
-            <p><i class="fas fa-user"></i> Sign in to your account</p>
+            <p><i className="fas fa-user"></i> Sign in to your account</p>
             <form onSubmit={e => onSubmit(e)}>
                 <div>
                     <input type="email" placeholder="Email Address" name="email" value={email} onChange={e => onChange(e)} required />
@@ -46,18 +45,17 @@ const Login = ({ login, setAlert, isAuthenticated }) => {
                         onChange={e => onChange(e)}
                     />
                 </div>
-                <input type="submit" class="btn btn-primary" value="Login" />
+                <input type="submit" className="btn btn-primary" value="Login" />
             </form>
-            <p class="my-1">
+            <p className="my-1">
                 Don't have an account? <Link to="/register">Sign Up</Link>
             </p>
         </Fragment>
     )
 }
-Login.propTypes = {
-    setAlert: PropTypes.func.isRequired,
+Login.propTypes = {    
     login: PropTypes.func.isRequired,
-    isAuthenticated: PropTypes.bool.isRequired
+    isAuthenticated: PropTypes.bool
 }
 
 const mapStateTpProps = state => ({

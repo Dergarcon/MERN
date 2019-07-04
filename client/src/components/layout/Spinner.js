@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import spinner from './spinner.gif'
-import { noAuto } from '@fortawesome/fontawesome-svg-core';
 
 export default () => (
     <Fragment>

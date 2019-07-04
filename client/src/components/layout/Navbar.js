@@ -11,12 +11,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <ul>
             <li><a onClick={logout} href="#!"><FontAwesomeIcon icon="sign-out-alt" />{' '}<span className='hide-sm'>Logout</span></a></li>
             <li><Link to="/dashboard"><FontAwesomeIcon icon="user" />{' '}<span className='hide-sm'>Dashboard</span></Link></li>
+            <li><Link to="/profiles">Developers</Link></li>
         </ul>
     )
 
     const guestLinks = (
         <ul>
-            <li><Link to="/#!">Developers</Link></li>
+            <li><Link to="/profiles">Developers</Link></li>
             <li><Link to="/register">Register</Link></li>
             <li><Link to="/login">Login</Link></li>
         </ul>
